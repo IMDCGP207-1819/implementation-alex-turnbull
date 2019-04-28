@@ -124,13 +124,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="entity.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="InputManagement.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="entity.h">
-      <DeploymentContent>true</DeploymentContent>
-    </ClInclude>
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="InputManagement.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
