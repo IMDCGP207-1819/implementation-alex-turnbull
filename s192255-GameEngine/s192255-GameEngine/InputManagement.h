@@ -8,8 +8,14 @@ public:
 	InputManagement();
 	~InputManagement();
 
-	bool IsSpriteClicked(sf::Sprite object, sf::Mouse::Button button, sf::RenderWindow &window);
+	bool getButton(sf::Keyboard::Key key);
+	bool getButton(sf::Mouse::Button button);
 
-	sf::Vector2i GetMousePosition(sf::RenderWindow &window);
+	bool getButtonDown(sf::Keyboard::Key key);
+	bool getButtonDown(sf::Mouse::Button button);
+
+	bool getButtonUp(sf::Keyboard::Key key);
+	bool getButtonUp(sf::Mouse::Button button);
+
 };
 
