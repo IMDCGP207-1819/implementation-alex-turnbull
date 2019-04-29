@@ -3,6 +3,13 @@
 
 #include <Box2D/Box2D.h>
 
+#include "Window.h"
+#include "InputManagement.h"
+#include "TimeHandler.h"
+#include "GameObject.h"
+#include "Game.h"
+#include "SceneManager.h"
+
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(200, 200), "Working");
@@ -26,7 +33,6 @@ int main()
 		window.clear();
 		window.draw(shape);
 		window.display();
-		
 	}
 
 	return 0;

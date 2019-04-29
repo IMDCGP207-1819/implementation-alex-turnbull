@@ -1,12 +1,18 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <vector>
+#include "Window.h"
 
+class Window;
 class InputManagement
 {
 public:
 	InputManagement();
-	~InputManagement();
+	~InputManagement();		
+
+	void Listen();
+	std::vector<sf::Event> events;
 
 	bool getButton(sf::Keyboard::Key key);
 	bool getButton(sf::Mouse::Button button);
