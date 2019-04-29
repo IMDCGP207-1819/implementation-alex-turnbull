@@ -1,16 +1,4 @@
-﻿  GameObject.cpp
-c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\gameobject.cpp(23): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\gameobject.cpp(57): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  InputManagement.cpp
-  Generating Code...
+﻿  InputManagement.cpp
 GameObject.obj : error LNK2001: unresolved external symbol "public: virtual class b2Shape * __thiscall b2PolygonShape::Clone(class b2BlockAllocator *)const " (?Clone@b2PolygonShape@@UBEPAVb2Shape@@PAVb2BlockAllocator@@@Z)
 GameObject.obj : error LNK2001: unresolved external symbol "public: virtual int __thiscall b2PolygonShape::GetChildCount(void)const " (?GetChildCount@b2PolygonShape@@UBEHXZ)
 GameObject.obj : error LNK2019: unresolved external symbol "public: void __thiscall b2PolygonShape::SetAsBox(float,float)" (?SetAsBox@b2PolygonShape@@QAEXMM@Z) referenced in function "public: void __thiscall GameObject::givePhysicsBody(class b2World &)" (?givePhysicsBody@GameObject@@QAEXAAVb2World@@@Z)
@@ -22,5 +10,4 @@ GameObject.obj : error LNK2019: unresolved external symbol "public: class b2Fixt
 GameObject.obj : error LNK2019: unresolved external symbol "public: class b2Body * __thiscall b2World::CreateBody(struct b2BodyDef const *)" (?CreateBody@b2World@@QAEPAVb2Body@@PBUb2BodyDef@@@Z) referenced in function "public: void __thiscall GameObject::givePhysicsBody(class b2World &)" (?givePhysicsBody@GameObject@@QAEXAAVb2World@@@Z)
 GameObject.obj : error LNK2019: unresolved external symbol "public: void __thiscall b2World::DestroyBody(class b2Body *)" (?DestroyBody@b2World@@QAEXPAVb2Body@@@Z) referenced in function "public: void __thiscall GameObject::Destroy(void)" (?Destroy@GameObject@@QAEXXZ)
 InputManagement.obj : error LNK2001: unresolved external symbol "public: static class sf::Window * Window::GameWindow" (?GameWindow@Window@@2PAV1sf@@A)
-Window.obj : error LNK2001: unresolved external symbol "public: static class sf::Window * Window::GameWindow" (?GameWindow@Window@@2PAV1sf@@A)
 C:\Users\alext\Documents\GitHub\implementation-alex-turnbull\s192255-GameEngine\Debug\s192255-GameEngine.exe : fatal error LNK1120: 11 unresolved externals
