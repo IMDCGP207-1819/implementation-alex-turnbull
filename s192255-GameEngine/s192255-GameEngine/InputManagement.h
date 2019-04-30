@@ -4,12 +4,18 @@
 #include <vector>
 #include "Window.h"
 
-class Window;
+#define MAX_KEYS 1024
+#define MAX_BUTTONS 16
+
 class InputManagement
 {
 public:
 	InputManagement();
-	~InputManagement();		
+	~InputManagement();
+
+	bool keys[MAX_KEYS];
+	bool mouseButons[MAX_BUTTONS];
+	float mouseX, mouseY;
 
 	void Listen();
 	std::vector<sf::Event> events;

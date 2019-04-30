@@ -1,5 +1,5 @@
 ﻿  main.cpp
-c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\main.cpp(24): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\main.cpp(21): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float

@@ -1,11 +1,13 @@
 #include "Window.h"
 
-Window::Window(int width, int height, std::string name)
+Window::Window(std::string name)
 {
 	_name = name;
-	_width = width;
-	_height = height;
+	_width = sf::VideoMode::getDesktopMode().width;
+	_height = sf::VideoMode::getDesktopMode().height;
 	CreateWindow();
+
+	_instance = this;
 }
 
 Window::~Window()
