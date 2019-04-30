@@ -124,18 +124,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="App.cpp" />
-    <ClCompile Include="EventManager.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="TimeHandler.cpp" />
-    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="Source\App.cpp" />
+    <ClCompile Include="Source\EventManager.cpp" />
+    <ClCompile Include="Source\Game.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\TimeHandler.cpp" />
+    <ClCompile Include="Source\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="App.h" />
-    <ClInclude Include="EventManager.h" />
-    <ClInclude Include="singleton.h" />
-    <ClInclude Include="TimeHandler.h" />
-    <ClInclude Include="Window.h" />
+    <ClInclude Include="Source\App.h" />
+    <ClInclude Include="Source\EventManager.h" />
+    <ClInclude Include="Source\Game.h" />
+    <ClInclude Include="Source\TimeHandler.h" />
+    <ClInclude Include="Source\Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
