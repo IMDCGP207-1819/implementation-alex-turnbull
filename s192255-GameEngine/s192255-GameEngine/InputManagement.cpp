@@ -39,8 +39,10 @@ bool InputManagement::getButton(sf::Keyboard::Key key)
 
 bool InputManagement::getButton(sf::Mouse::Button button)
 {
-	if (sf::Mouse::isButtonPressed(button))	{
-		return true;	}else
+	if (sf::Mouse::isButtonPressed(button))
+	{
+		return true;
+	}else
 	{
 		return false;
 	}

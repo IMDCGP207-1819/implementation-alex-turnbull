@@ -10,29 +10,32 @@
 #include "Game.h"
 #include "SceneManager.h"
 
+
+int width = 800;
+int height= 800;
+std::string name = "window";
+
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(200, 200), "Working");
+	Window window(width, height, name);
+
 	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
+	shape.setFillColor(sf::Color::Red);
+	shape.setPosition(sf::Vector2f(width/2, height/2));
+	shape.setOrigin(shape.getGlobalBounds().width/2, shape.getGlobalBounds().height/2);
 
-	sf::CircleShape circ(50.f);
-	circ.setFillColor(sf::Color::Red);
-
-	while (window.isOpen())
+	while (window.GameWindow->isOpen())
 	{
 		sf::Event event;
-		while (window.pollEvent(event))
+		while (window.GameWindow->pollEvent(event))
 		{
 			if (event.type == sf::Event::Closed)
-				window.close();
+				window.GameWindow->close();
 		}
 
-		sf::Keyboard keyboard;
-
-		window.clear();
-		window.draw(shape);
-		window.display();
+		window.GameWindow->clear(sf::Color(123,132,123,255));
+		window.GameWindow->draw(shape);
+		window.GameWindow->display();
 	}
 
 	return 0;
