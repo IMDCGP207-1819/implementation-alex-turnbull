@@ -124,15 +124,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="TimeHandler.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="App.h" />
+    <ClInclude Include="EventManager.h" />
+    <ClInclude Include="singleton.h" />
     <ClInclude Include="TimeHandler.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
