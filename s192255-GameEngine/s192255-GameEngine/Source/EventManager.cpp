@@ -19,12 +19,15 @@ void EventManager::pollEvents()
 		switch(event.type)
 		{
 			case sf::Event::Closed : std::cout << "\nClosing Program" << std::endl; system("PAUSE");
+				//send event to approprite handler
 				break;
 
 			case sf::Event::KeyPressed: std::cout << "\nPressed Key: " << event.key.code << std::endl;
+				//send event to input for player
 				break;
 
 			case sf::Event::KeyReleased :std::cout << "\nKey Released: " << event.key.code << std::endl;
+				//send event to input for player
 				break;
 		}
 

@@ -28,14 +28,7 @@ int main()
 
 	while (gameApp.getWindow()->instance()->GameWindow->isOpen())
 	{
-		gameApp.onUpdate();
-
-		/*sf::Event event;
-		while (gameApp.getWindow()->instance()->GameWindow->pollEvent(event))
-		{
-			if (event.type == sf::Event::Closed)
-				gameApp.getWindow()->instance()->GameWindow->close();
-		}*/
+		gameApp.Update();
 
 		std::cout << "Delta Time: " << gameApp.getDeltaTime() << '\r';
 

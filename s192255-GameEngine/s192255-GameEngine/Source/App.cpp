@@ -16,9 +16,11 @@ App::App()
 App::~App()
 {
 	delete m_windowPtr;
+	delete m_eventMangerPtr;
+	delete m_timeHandlerPtr;
 }
 
-void App::onUpdate()
+void App::Update()
 {
 	m_timeHandlerPtr->Update();
 	m_eventMangerPtr->pollEvents();

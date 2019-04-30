@@ -9,7 +9,7 @@ public:
 	App();
 	~App();
 
-	void onUpdate();
+	void Update();
 
 	Window* getWindow() { return m_windowPtr; }
 	float getDeltaTime() { return m_timeHandlerPtr->deltaTime; }
