@@ -18,7 +18,7 @@ void EventManager::pollEvents()
 	{
 		switch(event.type)
 		{
-			case sf::Event::Closed : std::cout << "\nClosing Program" << std::endl; system("PAUSE");
+			case sf::Event::Closed : std::cout << "\nClosing Program" << std::endl;
 				//send event to approprite handler
 				break;
 
