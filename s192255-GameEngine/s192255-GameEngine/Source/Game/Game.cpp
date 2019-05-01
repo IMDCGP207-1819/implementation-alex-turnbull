@@ -3,6 +3,7 @@
 Game::Game(sf::RenderWindow *window)
 {
 	gameWindow = window;
+	m_sceneMan = new SceneManager();
 }
 
 
@@ -21,6 +22,12 @@ void Game::start()
 	p->givePhysicsBody(world);
 	p->body->SetTransform(b2Vec2(200, 200), p->body->GetAngle());
 	gameObjectList.push_back(p);
+
+	GameObject* groundTest = new Platform();
+	groundTest->SetSprite("Source\\Assets\\floor.png");
+	groundTest->givePhysicsBody(world);
+	groundTest->body->SetTransform(b2Vec2(500, 500), groundTest->body->GetAngle());
+	gameObjectList.push_back(groundTest);
 }
 
 void Game::update()
@@ -28,9 +35,13 @@ void Game::update()
 	for(GameObject* gameO : gameObjectList)
 	{
 		gameO->Update();
-		//gameO->UpdatePhysics();
+		gameO->UpdatePhysics();
 		gameWindow->draw(gameO->sprite);
 	}
 
 	
+}
+
+void Game::loadScene(std::string levelFileDir)
+{
 }

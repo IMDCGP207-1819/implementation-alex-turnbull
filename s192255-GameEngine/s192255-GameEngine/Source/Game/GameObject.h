@@ -18,7 +18,7 @@ public:
 	b2Vec2 initalPos;
 	b2Vec2 velocity;
 	b2Body* body;
-	float scale;
+	float scale = 10;
 
 	sf::Texture texture;
 	sf::Sprite sprite;
