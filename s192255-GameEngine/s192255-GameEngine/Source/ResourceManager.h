@@ -9,7 +9,6 @@ public:
 
 	sf::Texture LoadTexture(std::string fileDir, std::string nameToStore);
 	sf::Texture GetTextureFromMap(std::string textureRef);
-	void storeInMap(std::string textureName, sf::Texture texture);
 
 	std::map<std::string, sf::Texture> textureMap;
 
@@ -21,5 +20,8 @@ public:
 			_instance = new ResourceManager;
 		return _instance;
 	}
+private:
+	void storeInMap(std::string textureName, sf::Texture texture);
+
 };
 

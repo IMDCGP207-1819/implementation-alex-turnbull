@@ -4,6 +4,7 @@
 
 GameObject::GameObject()
 {
+	m_resMan = new ResourceManager();
 }
 
 

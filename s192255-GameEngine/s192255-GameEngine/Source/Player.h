@@ -1,5 +1,6 @@
 #pragma once
 #include "GameObject.h"
+#include "ResourceManager.h"
 
 class GameObject;
 class Player :
@@ -11,5 +12,7 @@ public:
 
 	void GameObject::Load();
 	void GameObject::Update();
+
+private:
 };
 

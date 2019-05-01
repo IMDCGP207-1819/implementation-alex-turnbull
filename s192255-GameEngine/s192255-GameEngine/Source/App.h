@@ -2,11 +2,12 @@
 #include "Window.h"
 #include "EventManager.h"
 #include "TimeHandler.h"
+#include "Game.h"
 
 class App
 {
 public:
-	App();
+	App(std::string winName);
 	~App();
 
 	void Update();
@@ -22,5 +23,7 @@ private:
 	EventManager* m_eventMangerPtr;
 
 	TimeHandler* m_timeHandlerPtr;
+
+	Game* m_gamePtr;
 };
 

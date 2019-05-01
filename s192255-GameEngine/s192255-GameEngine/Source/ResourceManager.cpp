@@ -23,10 +23,12 @@ sf::Texture ResourceManager::LoadTexture(std::string fileDir, std::string nameTo
 
 sf::Texture ResourceManager::GetTextureFromMap(std::string textureRef)
 {
-	return sf::Texture();
+	sf::Texture returnTex = textureMap[textureRef];
+
+	return returnTex;
 }
 
 void ResourceManager::storeInMap(std::string textureName, sf::Texture texture)
 {
-	
+	textureMap.insert(std::pair<std::string, sf::Texture>(textureName, texture));
 }

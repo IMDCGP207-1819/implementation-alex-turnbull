@@ -2,12 +2,12 @@
 
 Window::Window(std::string name)
 {
-	_name = name;
-	_width = sf::VideoMode::getDesktopMode().width;
-	_height = sf::VideoMode::getDesktopMode().height;
+	m_name = name;
+	m_width = sf::VideoMode::getDesktopMode().width;
+	m_height = sf::VideoMode::getDesktopMode().height;
 	CreateWindow();
 
-	_instance = this;
+	m_instance = this;
 }
 
 Window::~Window()
@@ -16,6 +16,5 @@ Window::~Window()
 
 void Window::CreateWindow()
 {
-		GameWindow = new sf::RenderWindow(sf::VideoMode(_width, _height), _name);
-		GameWindow->setPosition(sf::Vector2i((1920 / 2) - (_width / 2), (1080 / 2) - (_height / 2)));
+		GameWindow = new sf::RenderWindow(sf::VideoMode(m_width, m_height), m_name);
 }

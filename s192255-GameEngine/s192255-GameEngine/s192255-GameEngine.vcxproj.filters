@@ -73,9 +73,6 @@
     <Image Include="Graphics\dialog_box.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Source\dialog_box.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="Source\Assets\pirateMan.png">
       <Filter>Resource Files</Filter>
     </Image>

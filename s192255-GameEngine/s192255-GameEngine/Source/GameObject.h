@@ -3,6 +3,8 @@
 #include <SFML/Graphics.hpp>
 #include <Box2D/Box2D.h>
 
+#include "ResourceManager.h"
+
 class GameObject: public sf::Transformable
 {
 public:
@@ -20,6 +22,8 @@ public:
 
 	sf::Texture texture;
 	sf::Sprite sprite;
+
+	ResourceManager *m_resMan;
 
 	void SetSprite(std::string fileDir);
 

@@ -13,16 +13,16 @@ public:
 
 	sf::RenderWindow* GameWindow;
 
-	int getWidth() { return _width; }
-	int getHeight() { return _height; }
+	int getWidth() { return m_width; }
+	int getHeight() { return m_height; }
 
-	Window* instance(){ return _instance; }
+	Window* instance(){ return m_instance; }
 
 private:
-	int _width;
-	int _height;
-	std::string _name;
+	int m_width;
+	int m_height;
+	std::string m_name;
 
-	Window* _instance;
+	Window* m_instance;
 };
 
