@@ -1,10 +1,7 @@
 #include "GameObject.h"
 
-
-
 GameObject::GameObject()
 {
-	m_resMan = new ResourceManager();
 }
 
 

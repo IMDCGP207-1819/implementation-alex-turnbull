@@ -18,7 +18,7 @@ public:
 
 	sf::RenderWindow *gameWindow;
 
-	ResourceManager* m_resMan = new ResourceManager();
+	ResourceManager* m_resMan;
 	SceneManager* m_sceneMan;
 
 	std::vector<GameObject*> gameObjectList = std::vector<GameObject*>();

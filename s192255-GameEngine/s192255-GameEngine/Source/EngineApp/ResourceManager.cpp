@@ -14,7 +14,7 @@ ResourceManager::~ResourceManager()
 sf::Texture ResourceManager::LoadTexture(std::string fileDir, std::string nameToStore)
 {
 	sf::Texture texture;
-	texture.loadFromFile(fileDir);
+	texture.loadFromFile(fileDir);	
 
 	storeInMap(nameToStore,texture);
 
