@@ -125,7 +125,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="Source\ResourceManager.cpp" />
     <ClCompile Include="Source\Player.cpp" />
     <ClCompile Include="Source\App.cpp" />
     <ClCompile Include="Source\EventManager.cpp" />
@@ -136,7 +136,7 @@
     <ClCompile Include="Source\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="Source\ResourceManager.h" />
     <ClInclude Include="Source\Player.h" />
     <ClInclude Include="Source\App.h" />
     <ClInclude Include="Source\EventManager.h" />
