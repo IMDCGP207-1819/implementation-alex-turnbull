@@ -13,6 +13,7 @@ public:
 	void Update();
 
 	Window* getWindow() { return m_windowPtr; }
+	Game* getGame() { return m_gamePtr; }
 	float getDeltaTime() { return m_timeHandlerPtr->deltaTime; }
 
 private:
