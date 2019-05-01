@@ -14,12 +14,10 @@ void GameObject::Destroy()
 	body->GetWorld()->DestroyBody(body);
 }
 
-void GameObject::SetSprite(std::string fileDir)
-{ 
-	texture.loadFromFile(fileDir);
+void GameObject::SetSprite()
+{ 	
 	sprite.setTexture(texture);
 	sprite.setOrigin(sf::Vector2f(texture.getSize().x / 2, texture.getSize().y / 2));
-
 }
 
 void GameObject::givePhysicsBody(b2World & World)

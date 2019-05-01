@@ -4,6 +4,7 @@
 
 ResourceManager::ResourceManager()
 {
+	textureMap.clear();
 }
 
 

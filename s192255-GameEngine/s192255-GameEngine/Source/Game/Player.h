@@ -10,7 +10,7 @@ public:
 	Player();
 	~Player();
 
-	void GameObject::Load();
+	void GameObject::Load(b2World& world);
 	void GameObject::Update();
 
 private:

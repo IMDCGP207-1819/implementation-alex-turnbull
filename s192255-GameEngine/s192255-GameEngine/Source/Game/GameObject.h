@@ -9,7 +9,7 @@ public:
 	GameObject();
 	~GameObject();
 
-	virtual void Load() = 0;
+	virtual void Load(b2World& world) = 0;
 	virtual void Update() = 0;
 	void Destroy();
 
@@ -21,7 +21,7 @@ public:
 	sf::Texture texture;
 	sf::Sprite sprite;
 
-	void SetSprite(std::string fileDir);
+	void SetSprite();
 
 	void givePhysicsBody(b2World& World);
 	void gravity();

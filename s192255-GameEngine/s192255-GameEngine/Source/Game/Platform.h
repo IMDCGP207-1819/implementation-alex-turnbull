@@ -7,7 +7,7 @@ public:
 	Platform();
 	~Platform();
 
-	void GameObject::Load();
+	void GameObject::Load(b2World& world);
 	void GameObject::Update();
 };
 
