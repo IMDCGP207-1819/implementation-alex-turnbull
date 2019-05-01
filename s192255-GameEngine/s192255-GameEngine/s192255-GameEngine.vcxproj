@@ -125,7 +125,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Game\Platform.cpp" />
+    <ClCompile Include="Source\EngineApp\InputManagement.cpp" />
     <ClCompile Include="Source\EngineApp\ResourceManager.cpp" />
+    <ClCompile Include="Source\EngineApp\SceneManager.cpp" />
     <ClCompile Include="Source\Game\Player.cpp" />
     <ClCompile Include="Source\EngineApp\App.cpp" />
     <ClCompile Include="Source\EngineApp\EventManager.cpp" />
@@ -136,7 +139,10 @@
     <ClCompile Include="Source\EngineApp\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Game\Platform.h" />
+    <ClInclude Include="Source\EngineApp\InputManagement.h" />
     <ClInclude Include="Source\EngineApp\ResourceManager.h" />
+    <ClInclude Include="Source\EngineApp\SceneManager.h" />
     <ClInclude Include="Source\Game\Player.h" />
     <ClInclude Include="Source\EngineApp\App.h" />
     <ClInclude Include="Source\EngineApp\EventManager.h" />
@@ -147,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="Graphics\dialog_box.png" />
+    <Image Include="Source\Assets\floor.png" />
     <Image Include="Source\Assets\pirateMan.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

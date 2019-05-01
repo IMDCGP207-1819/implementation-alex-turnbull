@@ -1,10 +1,2 @@
-﻿  App.cpp
-  main.cpp
-d:\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\engineapp\main.cpp(29): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-  Game.cpp
-  Generating Code...
+﻿  main.cpp
   s192255-GameEngine.vcxproj -> D:\GitHub\implementation-alex-turnbull\s192255-GameEngine\Debug\s192255-GameEngine.exe

@@ -42,6 +42,15 @@
     <ClCompile Include="Source\EngineApp\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\EngineApp\InputManagement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EngineApp\SceneManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Platform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Game\Game.h">
@@ -68,12 +77,24 @@
     <ClInclude Include="Source\EngineApp\Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\EngineApp\InputManagement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EngineApp\SceneManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Graphics\dialog_box.png">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Source\Assets\pirateMan.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Source\Assets\floor.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
