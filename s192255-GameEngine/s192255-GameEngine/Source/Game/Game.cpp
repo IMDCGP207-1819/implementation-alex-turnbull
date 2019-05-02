@@ -1,8 +1,9 @@
 #include "Game.h"
 
-Game::Game(sf::RenderWindow *window)
+Game::Game(sf::RenderWindow *window, TimeHandler* time)
 {
 	gameWindow = window;
+	m_timeHandler = time;
 	m_sceneMan = new SceneManager();
 	m_resMan = new ResourceManager();
 }
@@ -14,7 +15,7 @@ Game::~Game()
 
 void Game::start()
 {
-	world = new b2World(b2Vec2_zero);
+	world = new b2World(b2Vec2(0.0f,-9.8f));
 
 	m_resMan->LoadTexture("Source\\Assets\\floor.png", "floorTex");
 	m_resMan->LoadTexture("Source\\Assets\\pirateMan.png", "pirate");
@@ -56,7 +57,8 @@ void Game::update()
 		gameWindow->draw(gameO->sprite);
 		//std::cout << "X: " << gameO->body->GetPosition().x << " Y: " << gameO->body->GetPosition().y << std::endl;
 		
-	}	
+	}
+	world->Step(m_timeHandler->deltaTime,8, 8);
 }
 
 void Game::loadScene(std::string levelFileDir)

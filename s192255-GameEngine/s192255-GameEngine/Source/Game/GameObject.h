@@ -25,7 +25,7 @@ public:
 
 	void SetSprite();
 
-	void givePhysicsBody(b2World *World);
+	void givePhysicsBody(b2World *World, b2BodyType physType);
 	void gravity();
 	void ApplyVelocity();
 	void UpdatePhysics();

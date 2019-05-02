@@ -1,7 +1,7 @@
 {
 "Object_1" : {
 "Type" : "Player",
-"Position" : [200, 200],
+"Position" : [550, 200],
 "Rotation" : 0,
 "Sprite" : "pirate"
 },

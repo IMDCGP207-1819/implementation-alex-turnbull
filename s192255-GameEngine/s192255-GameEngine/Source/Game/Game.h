@@ -5,12 +5,13 @@
 #include "Platform.h"
 #include "../EngineApp/SceneManager.h"
 #include "../EngineApp/EventManager.h"
+#include "../EngineApp/TimeHandler.h"
 
 class ResourceManager;
 class Game
 {
 public:
-	Game(sf::RenderWindow *window);
+	Game(sf::RenderWindow *window, TimeHandler* time);
 	~Game();
 
 	void start();
@@ -26,6 +27,7 @@ public:
 
 	ResourceManager* m_resMan;
 	SceneManager* m_sceneMan;
+	TimeHandler* m_timeHandler;
 
 	std::vector<GameObject*> gameObjectList = std::vector<GameObject*>();
 };

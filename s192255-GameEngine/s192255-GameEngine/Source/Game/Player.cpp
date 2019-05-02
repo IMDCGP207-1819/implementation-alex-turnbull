@@ -13,10 +13,28 @@ Player::~Player()
 {
 }
 
+void Player::move(movementDirections moveType)
+{
+	b2Vec2 vel = body->GetLinearVelocity();
+
+	if(moveType == Right)
+	{
+		vel.x = speed.x;
+	}else if(moveType == Left)
+	{
+		vel.x = -speed.x;
+	}else if(moveType == Stop)
+	{
+		vel.x = 0;
+	}
+	
+	body->SetLinearVelocity(vel);
+}
+
 void Player::Load(b2World *World)
 {
 	//initalPos = b2Vec2(200, 200);
-	givePhysicsBody(World);
+	givePhysicsBody(World, b2BodyType::b2_dynamicBody);
 	//body->SetTransform(initalPos, body->GetAngle());
 	//m_resMan->instance()->LoadTexture("Source\\Assets\\pirateMan.png", "pirateTex");
 }
@@ -30,11 +48,13 @@ void Player::Update()
 	{
 		if (inputComponent->currentAction == inputComponent->moveRight)
 		{
-			std::cout << "\nMOVE RIGHT" << std::endl;
+			std::cout << "\nMOVE RIGHT" << std::endl;	
+			move(Right);
 		}
 		if (inputComponent->currentAction == inputComponent->moveLeft)
 		{
 			std::cout << "\nMOVE LEFT" << std::endl;
+			move(Left);
 		}
 		if (inputComponent->currentAction == inputComponent->jump)
 		{
@@ -42,6 +62,7 @@ void Player::Update()
 		}
 		if (inputComponent->currentAction == inputComponent->stop)
 		{
+			move(Stop);
 			//std::cout << "STOP" << std::endl;
 		}
 	}

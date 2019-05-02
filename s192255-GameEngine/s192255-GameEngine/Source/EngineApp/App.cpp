@@ -10,7 +10,7 @@ App::App(std::string winName)
 
 	m_timeHandlerPtr = new TimeHandler();
 
-	m_gamePtr = new Game(m_windowPtr->GameWindow);
+	m_gamePtr = new Game(m_windowPtr->GameWindow, m_timeHandlerPtr);
 }
 
 
