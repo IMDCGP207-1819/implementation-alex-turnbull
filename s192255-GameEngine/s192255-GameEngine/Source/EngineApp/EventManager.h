@@ -12,10 +12,13 @@ public:
 	~EventManager();
 
 	void pollEvents();
+	void storeEvent(sf::Event currentEvent);
 
 	void setWindowPtr(Window* window) { m_windowRef = window;  }
 		
 	Window* m_windowRef;
+
+	std::vector<sf::Event> events;
 
 	static EventManager* _instance;
 

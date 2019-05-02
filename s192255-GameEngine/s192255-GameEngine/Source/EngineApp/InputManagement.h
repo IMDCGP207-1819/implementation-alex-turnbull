@@ -2,7 +2,9 @@
 
 #include <SFML/Graphics.hpp>
 #include "Window.h"
+#include "EventManager.h"
 
+class EventManager;
 class InputManagement
 {
 public:
@@ -10,7 +12,19 @@ public:
 	~InputManagement();
 
 	void Listen();
-	std::vector<sf::Event> events;
 
+	EventManager* eventHandler;
+	sf::Event currentEvent;
+
+	enum playerActions
+	{
+		moveRight,
+		moveLeft,
+		jump,
+		stop,
+		no
+	};
+
+	playerActions currentAction = no;
 };
 

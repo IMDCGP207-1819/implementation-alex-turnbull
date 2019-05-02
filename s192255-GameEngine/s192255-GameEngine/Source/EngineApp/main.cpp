@@ -18,6 +18,7 @@ int main()
 	App gameApp = App("Scoop");
 
 	gameApp.getGame()->start();
+	gameApp.getGame()->givePlayerInput(gameApp.getEventManager());
 	while (gameApp.getWindow()->instance()->GameWindow->isOpen())
 	{
 		std::cout << "Delta Time: " << gameApp.getDeltaTime() << '\r';

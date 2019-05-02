@@ -14,6 +14,7 @@ public:
 
 	Window* getWindow() { return m_windowPtr; }
 	Game* getGame() { return m_gamePtr; }
+	EventManager* getEventManager() { return m_eventMangerPtr; }
 	float getDeltaTime() { return m_timeHandlerPtr->deltaTime; }
 
 private:

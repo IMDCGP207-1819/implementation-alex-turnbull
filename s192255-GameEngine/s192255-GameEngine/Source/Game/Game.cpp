@@ -72,8 +72,14 @@ void Game::loadScene(std::string levelFileDir)
 
 		if (GO->type == std::string("Player"))
 		{
-			gameObjectList.push_back(new Player(GO->position.x, GO->position.y, GO->rotation));
+			player = new Player(GO->position.x, GO->position.y, GO->rotation);
+			gameObjectList.push_back(player);
 		}
 
 	}
+}
+
+void Game::givePlayerInput(EventManager* eventManager)
+{
+	player->inputComponent->eventHandler = eventManager;
 }

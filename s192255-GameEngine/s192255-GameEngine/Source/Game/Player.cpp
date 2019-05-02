@@ -5,6 +5,7 @@
 Player::Player(int posX, int posY, float rot)
 {	
 	initalPos = b2Vec2(posX, posY);
+	inputComponent = new InputManagement();
 }
 
 
@@ -22,6 +23,27 @@ void Player::Load(b2World& world)
 
 void Player::Update()
 {
+	inputComponent->Listen();
 	//sprite.setTexture(m_resMan->instance()->GetTextureFromMap("pirateTex"));
+
+	if (inputComponent->currentAction != inputComponent->no)
+	{
+		if (inputComponent->currentAction == inputComponent->moveRight)
+		{
+			std::cout << "MOVE RIGHT" << std::endl;
+		}
+		if (inputComponent->currentAction == inputComponent->moveLeft)
+		{
+			std::cout << "MOVE LEFT" << std::endl;
+		}
+		if (inputComponent->currentAction == inputComponent->jump)
+		{
+			std::cout << "JUMP" << std::endl;
+		}
+		if (inputComponent->currentAction == inputComponent->stop)
+		{
+			std::cout << "STOP" << std::endl;
+		}
+	}
 }
 

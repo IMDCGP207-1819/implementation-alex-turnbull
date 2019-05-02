@@ -4,6 +4,7 @@
 #include "Player.h"
 #include "Platform.h"
 #include "../EngineApp/SceneManager.h"
+#include "../EngineApp/EventManager.h"
 
 class ResourceManager;
 class Game
@@ -14,7 +15,10 @@ public:
 
 	void start();
 	void update();
-	void loadScene(std::string levelFileDir);	
+	void loadScene(std::string levelFileDir);
+	void givePlayerInput(EventManager* eventManager);
+
+	Player* player;
 
 	sf::RenderWindow *gameWindow;
 

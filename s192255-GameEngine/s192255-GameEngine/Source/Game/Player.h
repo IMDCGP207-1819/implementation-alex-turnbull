@@ -1,5 +1,8 @@
 #pragma once
+#include <iostream>
+
 #include "GameObject.h"
+#include "../EngineApp/InputManagement.h"
 #include "../EngineApp/ResourceManager.h"
 
 class GameObject;
@@ -12,6 +15,8 @@ public:
 
 	void GameObject::Load(b2World& world);
 	void GameObject::Update();
+
+	InputManagement* inputComponent;
 
 private:
 };
