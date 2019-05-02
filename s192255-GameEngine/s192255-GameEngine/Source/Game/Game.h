@@ -20,6 +20,8 @@ public:
 
 	Player* player;
 
+	b2World *world;
+
 	sf::RenderWindow *gameWindow;
 
 	ResourceManager* m_resMan;

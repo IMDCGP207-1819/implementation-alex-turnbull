@@ -11,7 +11,7 @@ public:
 	GameObject();
 	~GameObject();
 
-	virtual void Load(b2World& world) = 0;
+	virtual void Load(b2World *World) = 0;
 	virtual void Update() = 0;
 	void Destroy();
 
@@ -25,7 +25,7 @@ public:
 
 	void SetSprite();
 
-	void givePhysicsBody(b2World& World);
+	void givePhysicsBody(b2World *World);
 	void gravity();
 	void ApplyVelocity();
 	void UpdatePhysics();

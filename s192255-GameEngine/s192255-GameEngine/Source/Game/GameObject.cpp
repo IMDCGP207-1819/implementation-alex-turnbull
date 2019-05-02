@@ -20,13 +20,13 @@ void GameObject::SetSprite()
 	sprite.setOrigin(sf::Vector2f(texture.getSize().x / 2, texture.getSize().y / 2));
 }
 
-void GameObject::givePhysicsBody(b2World & World)
+void GameObject::givePhysicsBody(b2World *World)
 {
 	b2BodyDef BodyDef;
 	BodyDef.position = b2Vec2(initalPos.x, initalPos.y);
 	BodyDef.fixedRotation = true;
 	BodyDef.type = b2_dynamicBody;
-	b2Body* Body = World.CreateBody(&BodyDef);
+	b2Body* Body = World->CreateBody(&BodyDef);
 	body = Body;
 	b2PolygonShape Shape;
 	Shape.SetAsBox((GameObject::texture.getSize().x / 2) / scale, (GameObject::texture.getSize().y / 2) / scale);

@@ -13,7 +13,7 @@ public:
 	Player(int posX, int posY, float rot);
 	~Player();
 
-	void GameObject::Load(b2World& world);
+	void GameObject::Load(b2World *World);
 	void GameObject::Update();
 
 	InputManagement* inputComponent;

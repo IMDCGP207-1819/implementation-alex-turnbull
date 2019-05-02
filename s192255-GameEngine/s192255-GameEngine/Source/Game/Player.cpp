@@ -13,11 +13,11 @@ Player::~Player()
 {
 }
 
-void Player::Load(b2World& world)
+void Player::Load(b2World *World)
 {
 	//initalPos = b2Vec2(200, 200);
-	givePhysicsBody(world);
-	body->SetTransform(initalPos, body->GetAngle());
+	givePhysicsBody(World);
+	//body->SetTransform(initalPos, body->GetAngle());
 	//m_resMan->instance()->LoadTexture("Source\\Assets\\pirateMan.png", "pirateTex");
 }
 

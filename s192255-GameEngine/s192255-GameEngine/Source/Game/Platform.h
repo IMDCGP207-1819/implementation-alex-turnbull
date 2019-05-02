@@ -7,7 +7,7 @@ public:
 	Platform(int posX, int posY, float rot);
 	~Platform();
 
-	void GameObject::Load(b2World& world);
+	void GameObject::Load(b2World *World);
 	void GameObject::Update();
 };
 

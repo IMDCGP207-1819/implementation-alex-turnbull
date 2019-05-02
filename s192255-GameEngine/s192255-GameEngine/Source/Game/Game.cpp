@@ -14,7 +14,7 @@ Game::~Game()
 
 void Game::start()
 {
-	b2World world = b2World(b2Vec2_zero);
+	world = new b2World(b2Vec2_zero);
 
 	m_resMan->LoadTexture("Source\\Assets\\floor.png", "floorTex");
 	m_resMan->LoadTexture("Source\\Assets\\pirateMan.png", "pirate");
@@ -27,11 +27,8 @@ void Game::start()
 	for (GameObject* gameO : gameObjectList)
 	{
 		gameO->Load(world);
-		//gameO->texture = m_resMan->GetTextureFromMap("pirate");
-		gameO->sprite.setTexture(gameO->texture);
-		//std::cout << "X: " << gameO->body->GetPosition().x << " Y: " << gameO->body->GetPosition().y << std::endl;
-
 	}
+
 	//groundTest->texture = m_resMan->GetTextureFromMap("floorTex");
 	//groundTest->SetSprite();
 	//groundTest->Load(world);
@@ -65,20 +62,20 @@ void Game::update()
 void Game::loadScene(std::string levelFileDir)
 {
 	m_sceneMan->parseSceneFromFile(levelFileDir);
-	for (SceneManager::GameObjectDef* GO : m_sceneMan->GameObjects)
+	for (SceneManager::GameObjectDef* GameObj : m_sceneMan->GameObjects)
 	{
-		if (GO->type == std::string("Platform"))
+		if (GameObj->type == std::string("Platform"))
 		{
-			Platform *platform = new Platform(GO->position.x, GO->position.y, GO->rotation);
-			platform->texture = m_resMan->GetTextureFromMap(GO->spriteName);
+			Platform *platform = new Platform(GameObj->position.x, GameObj->position.y, GameObj->rotation);
+			platform->texture = m_resMan->GetTextureFromMap(GameObj->spriteName);
 			platform->sprite.setTexture(platform->texture);
 			gameObjectList.push_back(platform);
 		}
 
-		if (GO->type == std::string("Player"))
+		if (GameObj->type == std::string("Player"))
 		{
-			player = new Player(GO->position.x, GO->position.y, GO->rotation);
-			player->texture = m_resMan->GetTextureFromMap(GO->spriteName);
+			player = new Player(GameObj->position.x, GameObj->position.y, GameObj->rotation);
+			player->texture = m_resMan->GetTextureFromMap(GameObj->spriteName);
 			player->sprite.setTexture(player->texture);
 			gameObjectList.push_back(player);
 		}
