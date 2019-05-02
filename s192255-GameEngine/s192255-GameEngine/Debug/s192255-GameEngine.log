@@ -1,18 +1,4 @@
-﻿  App.cpp
-  main.cpp
-  Game.cpp
-  GameObject.cpp
-d:\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\gameobject.cpp(20): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-d:\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\gameobject.cpp(53): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  Platform.cpp
+﻿  Platform.cpp
   Player.cpp
   Generating Code...
-  s192255-GameEngine.vcxproj -> D:\GitHub\implementation-alex-turnbull\s192255-GameEngine\Debug\s192255-GameEngine.exe
+  s192255-GameEngine.vcxproj -> C:\Users\alext\Documents\GitHub\implementation-alex-turnbull\s192255-GameEngine\Debug\s192255-GameEngine.exe

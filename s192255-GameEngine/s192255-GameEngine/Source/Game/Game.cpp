@@ -41,7 +41,7 @@ void Game::update()
 	for(GameObject* gameO : gameObjectList)
 	{
 		gameO->Update();
-		gameO->UpdatePhysics();
+		//gameO->UpdatePhysics();
 		gameWindow->draw(gameO->sprite);
 		std::cout << "X: " << gameO->body->GetPosition().x << " Y: " << gameO->body->GetPosition().y << std::endl;
 		

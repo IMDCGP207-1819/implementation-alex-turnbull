@@ -1,0 +1,14 @@
+{
+"Object_1" : {
+"Type" : "Player",
+"Position" : [200, 200],
+"Rotation" : 0
+},
+
+"Object_2" : {
+"Type" : "Platform",
+"Position" : [500, 500],
+"Rotation" : 0
+}
+
+}
