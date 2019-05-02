@@ -26,7 +26,7 @@ void EventManager::pollEvents()
 				break;
 
 			case sf::Event::KeyReleased: //std::cout << "\nKey Released: " << event.key.code << std::endl;
-				//storeEvent(event);
+				storeEvent(event);
 				break;
 		}
 

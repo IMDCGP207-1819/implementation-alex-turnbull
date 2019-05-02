@@ -42,7 +42,7 @@ void Player::Update()
 		}
 		if (inputComponent->currentAction == inputComponent->stop)
 		{
-			std::cout << "STOP" << std::endl;
+			//std::cout << "STOP" << std::endl;
 		}
 	}
 }

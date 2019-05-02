@@ -21,19 +21,19 @@ void InputManagement::Listen()
 
 		if (&currentEvent != NULL)
 		{
-			if (currentEvent.KeyPressed && currentEvent.key.code == sf::Keyboard::D)
+			if (currentEvent.type == sf::Event::KeyPressed && currentEvent.key.code == sf::Keyboard::D)
 			{
 				currentAction = moveRight;
 			}
-			if (currentEvent.KeyPressed && currentEvent.key.code == sf::Keyboard::A)
+			if (currentEvent.type == sf::Event::KeyPressed && currentEvent.key.code == sf::Keyboard::A)
 			{
 				currentAction = moveLeft;
 			}
-			if (currentEvent.KeyPressed && currentEvent.key.code == sf::Keyboard::Space)
+			if (currentEvent.type == sf::Event::KeyPressed && currentEvent.key.code == sf::Keyboard::Space)
 			{
 				currentAction = jump;
 			}
-			if (currentEvent.KeyReleased)
+			if (currentEvent.type == sf::Event::KeyReleased)
 			{
 				currentAction = stop;
 			}
