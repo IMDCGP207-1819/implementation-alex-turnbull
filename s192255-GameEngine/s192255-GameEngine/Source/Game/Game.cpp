@@ -16,16 +16,18 @@ void Game::start()
 {
 	b2World world = b2World(b2Vec2_zero);
 
+	m_resMan->LoadTexture("Source\\Assets\\floor.png", "floorTex");
+	m_resMan->LoadTexture("Source\\Assets\\pirateMan.png", "pirate");
+
 	loadScene("Source\\Assets\\Levels\\level1.json");
 
 	//GameObject* groundTest = new Platform();
-	m_resMan->LoadTexture("Source\\Assets\\floor.png", "floorTex");
-	m_resMan->LoadTexture("Source\\Assets\\pirateMan.png", "pirate");
+	
 
 	for (GameObject* gameO : gameObjectList)
 	{
 		gameO->Load(world);
-		gameO->texture = m_resMan->GetTextureFromMap("pirate");
+		//gameO->texture = m_resMan->GetTextureFromMap("pirate");
 		gameO->sprite.setTexture(gameO->texture);
 		//std::cout << "X: " << gameO->body->GetPosition().x << " Y: " << gameO->body->GetPosition().y << std::endl;
 
@@ -67,12 +69,17 @@ void Game::loadScene(std::string levelFileDir)
 	{
 		if (GO->type == std::string("Platform"))
 		{
-			gameObjectList.push_back(new Platform(GO->position.x, GO->position.y, GO->rotation));
+			Platform *platform = new Platform(GO->position.x, GO->position.y, GO->rotation);
+			platform->texture = m_resMan->GetTextureFromMap(GO->spriteName);
+			platform->sprite.setTexture(platform->texture);
+			gameObjectList.push_back(platform);
 		}
 
 		if (GO->type == std::string("Player"))
 		{
 			player = new Player(GO->position.x, GO->position.y, GO->rotation);
+			player->texture = m_resMan->GetTextureFromMap(GO->spriteName);
+			player->sprite.setTexture(player->texture);
 			gameObjectList.push_back(player);
 		}
 

@@ -30,15 +30,15 @@ void Player::Update()
 	{
 		if (inputComponent->currentAction == inputComponent->moveRight)
 		{
-			std::cout << "MOVE RIGHT" << std::endl;
+			std::cout << "\nMOVE RIGHT" << std::endl;
 		}
 		if (inputComponent->currentAction == inputComponent->moveLeft)
 		{
-			std::cout << "MOVE LEFT" << std::endl;
+			std::cout << "\nMOVE LEFT" << std::endl;
 		}
 		if (inputComponent->currentAction == inputComponent->jump)
 		{
-			std::cout << "JUMP" << std::endl;
+			std::cout << "\nJUMP" << std::endl;
 		}
 		if (inputComponent->currentAction == inputComponent->stop)
 		{

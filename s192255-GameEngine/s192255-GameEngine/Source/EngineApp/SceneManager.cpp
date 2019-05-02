@@ -57,6 +57,10 @@ void SceneManager::parseSceneFromFile(std::string levelFileDir)
 					{
 						newGameObject->rotation = doc[baseName]["Rotation"].GetInt();
 					}
+					if (doc[baseName].HasMember("Sprite"))
+					{
+						newGameObject->spriteName = doc[baseName]["Sprite"].GetString();
+					}
 
 					GameObjects.push_back(newGameObject);
 				}

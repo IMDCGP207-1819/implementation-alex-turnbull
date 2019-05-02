@@ -19,6 +19,7 @@ public:
 		std::string type;
 		sf::Vector2f position;
 		float rotation;
+		std::string spriteName;
 	};
 
 	std::vector<GameObjectDef*> GameObjects;

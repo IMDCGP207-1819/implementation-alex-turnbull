@@ -1,2 +1,12 @@
-﻿  InputManagement.cpp
+﻿  Game.cpp
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\game.cpp(72): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\game.cpp(80): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
   s192255-GameEngine.vcxproj -> C:\Users\alext\Documents\GitHub\implementation-alex-turnbull\s192255-GameEngine\Debug\s192255-GameEngine.exe
