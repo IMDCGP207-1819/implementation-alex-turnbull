@@ -11,6 +11,13 @@
 "Position" : [500, 500],
 "Rotation" : 0,
 "Sprite" : "floorTex"
+},
+
+"Object_3" : {
+"Type" : "Platform",
+"Position" : [500, 700],
+"Rotation" : 10,
+"Sprite" : "floorTex"
 }
 
 }

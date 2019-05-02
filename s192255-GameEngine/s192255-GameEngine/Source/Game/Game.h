@@ -7,6 +7,8 @@
 #include "../EngineApp/EventManager.h"
 #include "../EngineApp/TimeHandler.h"
 
+#include "Box2D/Collision/b2Collision.h"
+
 class ResourceManager;
 class Game
 {

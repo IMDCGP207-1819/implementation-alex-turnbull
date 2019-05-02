@@ -5,6 +5,7 @@
 Player::Player(int posX, int posY, float rot)
 {	
 	initalPos = b2Vec2(posX, posY);
+	initalRot = rot;
 	inputComponent = new InputManagement();
 }
 

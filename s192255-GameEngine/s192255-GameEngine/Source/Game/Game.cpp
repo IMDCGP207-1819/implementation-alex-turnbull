@@ -1,5 +1,33 @@
 #include "Game.h"
 
+class contactListener : public b2ContactListener
+{
+	void BeginContact(b2Contact* contact);
+	void EndContact(b2Contact* contact);
+	void PostSolve(b2Contact* contact, const b2ContactImpulse* impulse);
+	void PreSolve(b2Contact* contact, const b2Manifold* oldManifold);
+};
+
+void contactListener::BeginContact(b2Contact* contact)
+{
+	std::cout << "Begin Contact" << std::endl;
+}
+
+void contactListener::EndContact(b2Contact* contact)
+{
+	std::cout << "End Contact" << std::endl;
+}
+
+void contactListener::PostSolve(b2Contact* contact, const b2ContactImpulse* impulse)
+{
+	std::cout << "Post Solve" << std::endl;
+}
+
+void contactListener::PreSolve(b2Contact* contact, const b2Manifold* oldManifold)
+{
+	std::cout << "Pre Solve" << std::endl;
+}
+
 Game::Game(sf::RenderWindow *window, TimeHandler* time)
 {
 	gameWindow = window;
@@ -15,7 +43,10 @@ Game::~Game()
 
 void Game::start()
 {
-	world = new b2World(b2Vec2(0.0f,-9.8f));
+	world = new b2World(b2Vec2(0.0f,9.8f));
+
+	contactListener *listener = new contactListener();
+	world->SetContactListener(listener);
 
 	m_resMan->LoadTexture("Source\\Assets\\floor.png", "floorTex");
 	m_resMan->LoadTexture("Source\\Assets\\pirateMan.png", "pirate");
@@ -55,10 +86,9 @@ void Game::update()
 		gameO->Update();
 		gameO->UpdatePhysics();		
 		gameWindow->draw(gameO->sprite);
-		//std::cout << "X: " << gameO->body->GetPosition().x << " Y: " << gameO->body->GetPosition().y << std::endl;
 		
 	}
-	world->Step(m_timeHandler->deltaTime,8, 8);
+	world->Step(m_timeHandler->deltaTime*10,8, 8);
 }
 
 void Game::loadScene(std::string levelFileDir)

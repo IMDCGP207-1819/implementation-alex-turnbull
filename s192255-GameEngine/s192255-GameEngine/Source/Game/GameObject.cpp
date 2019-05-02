@@ -39,9 +39,9 @@ void GameObject::givePhysicsBody(b2World *World, b2BodyType physType)
 
 void GameObject::gravity()
 {
-	b2Vec2 vel = body->GetLinearVelocity();
-	vel.y = 100;
-	body->SetLinearVelocity(vel);
+	/*b2Vec2 vel = body->GetLinearVelocity();
+	vel.y = 10;
+	body->SetLinearVelocity(vel);*/
 }
 
 void GameObject::ApplyVelocity()

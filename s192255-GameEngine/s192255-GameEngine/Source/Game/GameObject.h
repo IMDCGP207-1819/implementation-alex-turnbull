@@ -16,6 +16,7 @@ public:
 	void Destroy();
 
 	b2Vec2 initalPos;
+	float initalRot;
 	b2Vec2 velocity;
 	b2Body* body;
 	float scale = 10;
