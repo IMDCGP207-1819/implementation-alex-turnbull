@@ -10,6 +10,7 @@ ResourceManager::ResourceManager()
 
 ResourceManager::~ResourceManager()
 {
+	textureMap.clear();
 }
 
 sf::Texture ResourceManager::LoadTexture(std::string fileDir, std::string nameToStore)

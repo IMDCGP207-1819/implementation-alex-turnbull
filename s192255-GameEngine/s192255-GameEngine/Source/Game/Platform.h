@@ -4,7 +4,7 @@ class Platform :
 	public GameObject
 {
 public:
-	Platform();
+	Platform(int posX, int posY, float rot);
 	~Platform();
 
 	void GameObject::Load(b2World& world);

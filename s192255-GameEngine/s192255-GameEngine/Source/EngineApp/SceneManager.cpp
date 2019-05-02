@@ -24,14 +24,14 @@ void SceneManager::parseSceneFromFile(std::string levelFileDir)
 	doc.ParseStream<0, rapidjson::UTF8<>, rapidjson::FileReadStream>(is);
 
 	if(doc.IsObject())
-	{
-		char baseName[64] = "Object_";
-		char intValue[8];		
-		
+	{		
 		int iterator = 0;
 		
 		while(true)
 		{
+			char baseName[64] = "Object_";
+			char intValue[8];
+
 			iterator++;
 			sprintf(intValue, "%d", iterator);
 

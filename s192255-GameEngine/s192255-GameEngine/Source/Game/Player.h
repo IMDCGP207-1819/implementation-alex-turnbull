@@ -7,7 +7,7 @@ class Player :
 	public GameObject
 {
 public:
-	Player();
+	Player(int posX, int posY, float rot);
 	~Player();
 
 	void GameObject::Load(b2World& world);
