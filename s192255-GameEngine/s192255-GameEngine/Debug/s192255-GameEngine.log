@@ -1,3 +1,53 @@
-﻿  Player.cpp
+﻿  App.cpp
+  SceneManager.cpp
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\engineapp\core\scenemanager.cpp(65): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\engineapp\core\scenemanager.cpp(70): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  EventManager.cpp
+  InputManagement.cpp
+  main.cpp
+  Ball.cpp
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\ball.cpp(8): warning C4244: 'argument': conversion from 'int' to 'float32', possible loss of data
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\ball.cpp(21): warning C4244: 'argument': conversion from 'double' to 'float32', possible loss of data
+  Game.cpp
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\game.cpp(66): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\game.cpp(74): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\game.cpp(82): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+  GameObject.cpp
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\gameobject.cpp(36): warning C4244: 'argument': conversion from 'T' to 'float32', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\gameobject.cpp(60): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\gameobject.cpp(61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Platform.cpp
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\platform.cpp(7): warning C4244: 'argument': conversion from 'int' to 'float32', possible loss of data
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\platform.cpp(20): warning C4244: 'argument': conversion from 'double' to 'float32', possible loss of data
+  Player.cpp
 c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\player.cpp(8): warning C4244: 'argument': conversion from 'int' to 'float32', possible loss of data
+  Generating Code...
   s192255-GameEngine.vcxproj -> C:\Users\alext\Documents\GitHub\implementation-alex-turnbull\s192255-GameEngine\Debug\s192255-GameEngine.exe

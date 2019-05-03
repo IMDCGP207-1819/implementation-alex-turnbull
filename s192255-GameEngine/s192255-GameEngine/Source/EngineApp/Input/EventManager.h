@@ -31,7 +31,9 @@ private:
 
 	static EventManager* _instance;
 
-	//Attempted Proper Event Systeam with Delegates/Callbacks
+	//Idealy would have liked to have implemented a proper Event Management System with delegates and callbacks
+	//Attempted to do so but to no avail
+
 	/*bool AddListener(sf::Event type, IEventHandler *listener)
 	{
 		listeners[type].push_back(listener);
