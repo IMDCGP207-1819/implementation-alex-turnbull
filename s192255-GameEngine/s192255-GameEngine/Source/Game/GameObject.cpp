@@ -32,7 +32,7 @@ void GameObject::givePhysicsBody(b2World *World, b2BodyType physType)
 	Shape.SetAsBox((GameObject::texture.getSize().x / 2), (GameObject::texture.getSize().y / 2));
 	b2FixtureDef FixtureDef;
 	FixtureDef.density = 1.f;
-	FixtureDef.friction = 0.0f;
+	FixtureDef.friction = 0.05f;
 	FixtureDef.shape = &Shape;
 	Body->CreateFixture(&FixtureDef);
 }
