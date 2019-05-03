@@ -3,6 +3,7 @@
 ///Construct an App to Contain all the stuff
 App::App(std::string winName)
 {
+	//Create all of the required objects and store them
 	m_windowName = winName;
 	m_windowPtr = new Window(m_windowName);
 

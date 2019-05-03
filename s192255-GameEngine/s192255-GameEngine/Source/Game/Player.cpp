@@ -4,6 +4,7 @@
 
 Player::Player(int posX, int posY, float rot)
 {	
+	//init variables
 	initalPos = b2Vec2(posX, posY);
 	initalRot = rot;
 	inputComponent = new InputManagement();
@@ -16,6 +17,7 @@ Player::~Player()
 
 void Player::move(movementDirections moveType)
 {
+	//apply linear velocity to move the character body based on the input given through keyboard
 	b2Vec2 vel = body->GetLinearVelocity();
 
 	if(moveType == Right)
@@ -41,6 +43,7 @@ void Player::Update()
 {
 	inputComponent->Listen();
 
+	//handle the movement of the character based on what the input component is recieving/handling from the Event Polling Manager
 	if (inputComponent->currentAction != inputComponent->no)
 	{
 		if (inputComponent->currentAction == inputComponent->moveRight)

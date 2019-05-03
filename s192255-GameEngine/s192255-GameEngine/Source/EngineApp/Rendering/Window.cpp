@@ -2,6 +2,7 @@
 
 Window::Window(std::string name)
 {
+	//define the variables for the window
 	m_name = name;
 	m_width = sf::VideoMode::getDesktopMode().width;
 	m_height = sf::VideoMode::getDesktopMode().height;
@@ -16,5 +17,6 @@ Window::~Window()
 
 void Window::CreateWindow()
 {
-		GameWindow = new sf::RenderWindow(sf::VideoMode(m_width, m_height), m_name);
+	//create the Render Window	
+	GameWindow = new sf::RenderWindow(sf::VideoMode(m_width, m_height), m_name);
 }
