@@ -125,6 +125,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\EngineApp\ContactListener.cpp" />
     <ClCompile Include="Source\Game\Platform.cpp" />
     <ClCompile Include="Source\EngineApp\InputManagement.cpp" />
     <ClCompile Include="Source\EngineApp\ResourceManager.cpp" />
@@ -139,6 +140,7 @@
     <ClCompile Include="Source\EngineApp\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\EngineApp\ContactListener.h" />
     <ClInclude Include="Source\Game\Platform.h" />
     <ClInclude Include="Source\EngineApp\InputManagement.h" />
     <ClInclude Include="Source\EngineApp\ResourceManager.h" />

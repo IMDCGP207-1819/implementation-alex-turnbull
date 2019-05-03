@@ -6,6 +6,7 @@
 #include "../EngineApp/SceneManager.h"
 #include "../EngineApp/EventManager.h"
 #include "../EngineApp/TimeHandler.h"
+#include "../EngineApp/ContactListener.h"
 
 #include "Box2D/Collision/b2Collision.h"
 
