@@ -2,6 +2,8 @@
 #include "GameObject.h"
 #include "Player.h"
 #include "Platform.h"
+#include "Ball.h"
+
 #include "../EngineApp/Core/ResourceManager.h"
 #include "../EngineApp/Core/SceneManager.h"
 #include "../EngineApp/Core/TimeHandler.h"

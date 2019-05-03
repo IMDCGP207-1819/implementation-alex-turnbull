@@ -54,6 +54,9 @@
     <ClCompile Include="Source\EngineApp\Rendering\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Game\Ball.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Game\Game.h">
@@ -92,6 +95,9 @@
     <ClInclude Include="Source\EngineApp\Input\EventManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Game\Ball.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Graphics\dialog_box.png">
@@ -101,6 +107,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Source\Assets\floor.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Source\Assets\ball.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

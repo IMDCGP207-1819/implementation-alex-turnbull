@@ -126,6 +126,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source\EngineApp\Physics\ContactListener.cpp" />
+    <ClCompile Include="Source\Game\Ball.cpp" />
     <ClCompile Include="Source\Game\Platform.cpp" />
     <ClCompile Include="Source\EngineApp\Input\InputManagement.cpp" />
     <ClCompile Include="Source\EngineApp\Core\ResourceManager.cpp" />
@@ -141,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\EngineApp\Physics\ContactListener.h" />
+    <ClInclude Include="Source\Game\Ball.h" />
     <ClInclude Include="Source\Game\Platform.h" />
     <ClInclude Include="Source\EngineApp\Input\InputManagement.h" />
     <ClInclude Include="Source\EngineApp\Core\ResourceManager.h" />
@@ -155,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="Graphics\dialog_box.png" />
+    <Image Include="Source\Assets\ball.png" />
     <Image Include="Source\Assets\floor.png" />
     <Image Include="Source\Assets\pirateMan.png" />
   </ItemGroup>

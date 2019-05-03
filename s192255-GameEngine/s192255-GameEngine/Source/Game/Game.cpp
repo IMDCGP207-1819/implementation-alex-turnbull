@@ -22,33 +22,14 @@ void Game::start()
 
 	m_resMan->LoadTexture("Source\\Assets\\floor.png", "floorTex");
 	m_resMan->LoadTexture("Source\\Assets\\pirateMan.png", "pirate");
+	m_resMan->LoadTexture("Source\\Assets\\ball.png", "ball");
 
-	loadScene("Source\\Assets\\Levels\\level1.json");
-
-	//GameObject* groundTest = new Platform();
-	
+	loadScene("Source\\Assets\\Levels\\level1.json");	
 
 	for (GameObject* gameO : gameObjectList)
 	{
 		gameO->Load(world);
 	}
-
-	//groundTest->texture = m_resMan->GetTextureFromMap("floorTex");
-	//groundTest->SetSprite();
-	//groundTest->Load(world);
-	////groundTest->body->SetTransform(b2Vec2(1000, 1000), groundTest->body->GetAngle());
-	//gameObjectList.push_back(groundTest);
-
-	//GameObject *p = new Player();	
-	//m_resMan->LoadTexture("Source\\Assets\\pirateMan.png", "pirateTex");
-	//p->texture = m_resMan->GetTextureFromMap("pirateTex");
-	//p->SetSprite();
-	//p->Load(world);
-	////p->body->SetTransform(b2Vec2(200, 200), p->body->GetAngle());
-	//gameObjectList.push_back(p);	
-
-	/*std::cout << "X: " << p->body->GetPosition().x << " Y: " << p->body->GetPosition().y << std::endl;
-	std::cout << "X: " << groundTest->body->GetPosition().x << " Y: " << groundTest->body->GetPosition().y << std::endl;*/
 }
 
 void Game::update()
@@ -82,6 +63,14 @@ void Game::loadScene(std::string levelFileDir)
 			player->texture = m_resMan->GetTextureFromMap(GameObj->spriteName);
 			player->sprite.setTexture(player->texture);
 			gameObjectList.push_back(player);
+		}
+
+		if (GameObj->type == std::string("Ball"))
+		{
+			Ball *ball = new Ball(GameObj->position.x, GameObj->position.y, GameObj->rotation);
+			ball->texture = m_resMan->GetTextureFromMap(GameObj->spriteName);
+			ball->sprite.setTexture(ball->texture);
+			gameObjectList.push_back(ball);
 		}
 
 	}
