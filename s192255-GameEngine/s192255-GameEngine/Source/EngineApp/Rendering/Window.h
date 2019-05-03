@@ -7,8 +7,8 @@
 class Window
 {
 public:
-	Window(std::string name);
-	~Window();
+	Window(std::string name); //!< Constructor taking in name for the Window
+	~Window(); //!< Deconstructor
 
 	void CreateWindow(); //!< Create a new Render Window given the parameters
 

@@ -13,12 +13,12 @@
 #include "Box2D/Collision/b2Collision.h"
 
 class ResourceManager;
-///Overall Game Class, stores and runs all of the gameObjects in the world/scene
+///stores and runs all of the gameObjects in the world/scene
 class Game
 {
 public:
-	Game(sf::RenderWindow *window, TimeHandler* time);
-	~Game();
+	Game(sf::RenderWindow *window, TimeHandler* time); //!< Construct a Game passing the Window and Time Manager
+	~Game(); //!< Deconstructor
 
 	void start(); //!< Start of the game, define the world and the assets needed
 	void update(); //!< Update all gameObjects within the world
@@ -27,13 +27,13 @@ public:
 
 	Player* player; //!< Store a reference the player controller GameObject
 
-	b2World *world; //!< Store a refence of the Physics based world
+	b2World *world; //!< Store a reference of the Physics based world
 
-	sf::RenderWindow *gameWindow;
+	sf::RenderWindow *gameWindow; //!< Store a reference of the SFML Window
 
-	ResourceManager* m_resMan; 
-	SceneManager* m_sceneMan; 
-	TimeHandler* m_timeHandler;
+	ResourceManager* m_resMan;  //!< Store a reference to the Resource Manager
+	SceneManager* m_sceneMan;  //!< Store a reference to the Scene Manager
+	TimeHandler* m_timeHandler; //!< Store a reference to the Time Handler
 
 	std::vector<GameObject*> gameObjectList = std::vector<GameObject*>(); //!< Stores a list of all the GameObjects within the game world
 };

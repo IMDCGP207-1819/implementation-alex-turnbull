@@ -11,13 +11,13 @@ class Player :
 	public GameObject
 {
 public:
-	Player(int posX, int posY, float rot);
-	~Player();
+	Player(int posX, int posY, float rot); //!< Constructor taking in positional/rotational arguments
+	~Player(); //!< Deconstructor
 
-	void GameObject::Load(b2World *World);
-	void GameObject::Update();
+	void GameObject::Load(b2World *World); //!< Load the GameObject into the world
+	void GameObject::Update(); //!< Update the GameObject of all functionallity
 
-	b2Vec2 speed = b2Vec2(50, 0);
+	b2Vec2 speed = b2Vec2(50, 0); //!< the base speed applied when moving
 
 	enum movementDirections
 	{
@@ -27,13 +27,11 @@ public:
 		Stop
 	};
 
-	movementDirections playerMovement;
-
-
-	void move(movementDirections moveType);
-
+	movementDirections playerMovement; //!< stores the current action the Player is doing based on keyboard input
+	 
+	void move(movementDirections moveType); //!< move the entity based on direction using linear velocity
 	
-	InputManagement* inputComponent;
+	InputManagement* inputComponent; //!< store a reference to the Input Management Component
 
 private:
 };

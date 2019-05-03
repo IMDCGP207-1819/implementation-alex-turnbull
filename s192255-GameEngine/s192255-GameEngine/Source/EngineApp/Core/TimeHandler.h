@@ -1,14 +1,14 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
-///The TimeHandler is part of the App and is responsible for maintaining a global clock
+///part of the App responsible for maintaining a global clock
 class TimeHandler
 {
 public:
-	TimeHandler();
-	~TimeHandler();
+	TimeHandler(); //!< Construct the Time Handler
+	~TimeHandler(); //!< Deconstruction function
 
-	float deltaTime; //!< Store the deltatime value between frames
+	float deltaTime; //!< Store the Delta-Time value between frames
 
 	sf::Clock clock = sf::Clock(); //!< Define the global clock to run
 

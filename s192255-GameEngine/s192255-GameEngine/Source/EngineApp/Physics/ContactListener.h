@@ -13,6 +13,6 @@ public:
 
 	void BeginContact(b2Contact* contact); //!< Callback when Objects begin touching
 	void EndContact(b2Contact* contact); //!< Callback when Objects stop colliding
-	void PostSolve(b2Contact* contact, const b2ContactImpulse* impulse);
-	void PreSolve(b2Contact* contact, const b2Manifold* oldManifold);
+	void PostSolve(b2Contact* contact, const b2ContactImpulse* impulse); //!< Post solving of Object Collision
+	void PreSolve(b2Contact* contact, const b2Manifold* oldManifold); //!< Pre solving of Object Collision
 };

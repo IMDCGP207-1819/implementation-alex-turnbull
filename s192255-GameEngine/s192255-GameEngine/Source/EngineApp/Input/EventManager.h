@@ -5,14 +5,14 @@
 
 class Window;
 //typedef std::map<sf::Event, std::vector<IEventHandler*>> eventMap;
-///The Event Mangager Polls and stores events from the SFML Game Window
+///polls and stores events from the SFML Game Window
 class EventManager
 {
 public:
-	EventManager();
-	~EventManager();
+	EventManager(); //!< Constructor
+	~EventManager(); //!< Deconstructor
 
-	void pollEvents(); //!< called everyframe to poll the window for events
+	void pollEvents(); //!< called every frame to poll the window for events
 	void storeEvent(sf::Event currentEvent); //!< store an event into the list of events for the input manager to handle
 
 	void setWindowPtr(Window* window) { m_windowRef = window;  } //!< set the pointer for the the window the game is running in

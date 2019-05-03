@@ -10,15 +10,15 @@ class EventManager;
 class InputManagement
 {
 public:
-	InputManagement();
-	~InputManagement();
+	InputManagement(); //!< Constructor function
+	~InputManagement(); //!< Deconstruct
 
 	void Listen(); //!< await for events to be polled by the Event Manager and handle them as such
 
-	EventManager* eventHandler; //!< store a refence to the Event Management System
+	EventManager* eventHandler; //!< Store a reference to the Event Management System
 	sf::Event currentEvent; //!< Temporary storage of the current event being handled
 
-	enum playerActions //!< Defining the list of actions that the user can have on a player class
+	enum playerActions //!< Defining the list of actions that the Player can do
 	{
 		moveRight,
 		moveLeft,

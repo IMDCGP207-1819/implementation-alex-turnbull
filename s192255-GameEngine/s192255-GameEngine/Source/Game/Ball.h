@@ -7,9 +7,9 @@ class Ball :
 {
 public:
 	Ball(int posX, int posY, float rot); //!< Construct a ball given the position and rotation
-	~Ball();
+	~Ball(); //!< Deconstructor
 
-	void GameObject::Load(b2World *World);
-	void GameObject::Update();
+	void GameObject::Load(b2World *World); //!< Load the GameObject into the world
+	void GameObject::Update(); //!< Update the GameObject of all functionallity
 };
 

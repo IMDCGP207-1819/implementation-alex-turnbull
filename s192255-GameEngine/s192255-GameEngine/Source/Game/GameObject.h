@@ -12,8 +12,8 @@ public:
 	GameObject();
 	~GameObject();
 
-	virtual void Load(b2World *World) = 0;
-	virtual void Update() = 0;
+	virtual void Load(b2World *World) = 0; //!< Virtal load function to be declared by derived Objects called on creation
+	virtual void Update() = 0; //!< Virtal Update function to be declared by derived Objects called every tick
 	void Destroy(); //!< Remove the GameObject in it's entirety from the GameWorld
 
 	b2Vec2 initalPos; //!< Define the GameObject inital position on load
