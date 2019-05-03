@@ -2,21 +2,25 @@
 #include <Box2D/Box2D.h>
 #include <iostream>
 
-
-//#include "Core/SceneManager.h"
-//#include "Core/ResourceManager.h"
-//#include "Core/TimeHandler.h"
 #include "Core/App.h"
+//#include "Core/ResourceManager.h"
+//#include "Core/SceneManager.h"
+//#include "Core/TimeHandler.h"
+
+//#include "Input/EventManager.h"
 //#include "Input/InputManagement.h"
+
+//#include "Physics/ContactListener.h"
+
 //#include "Rendering/Window.h"
-//
+
 //#include "../Game/GameObject.h"
 //#include "../Game/Game.h"
 //#include "../Game/Player.h"
 
 int main()
 {
-	App gameApp = App("Scoop");
+	App gameApp = App("ROME");
 
 	gameApp.getGame()->start();
 	gameApp.getGame()->givePlayerInput(gameApp.getEventManager());
