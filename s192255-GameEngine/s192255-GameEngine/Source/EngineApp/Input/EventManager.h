@@ -29,6 +29,7 @@ public:
 		return _instance;
 	}
 
+	//Attempted Proper Event Systeam with Delegates/Callbacks
 	/*bool AddListener(sf::Event type, IEventHandler *listener)
 	{
 		listeners[type].push_back(listener);

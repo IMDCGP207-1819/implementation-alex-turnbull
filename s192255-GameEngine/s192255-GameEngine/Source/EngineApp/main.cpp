@@ -26,10 +26,6 @@ int main()
 
 	gameApp.getGame()->start();
 	gameApp.getGame()->givePlayerInput(gameApp.getEventManager());
-	/*for (size_t i = 0; i < gameApp.getGame()->gameObjectList.size(); i++)
-	{
-		gameApp.getGame()->gameObjectList[i]->body->SetTransform(b2Vec2(300, 300), gameApp.getGame()->gameObjectList[i]->body->GetAngle());
-	}*/
 	while (gameApp.getWindow()->instance()->GameWindow->isOpen())
 	{
 		std::cout << "Delta Time: " << gameApp.getDeltaTime() << '\r';

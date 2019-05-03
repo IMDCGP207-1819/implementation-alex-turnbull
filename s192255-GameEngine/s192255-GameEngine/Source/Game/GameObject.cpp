@@ -17,7 +17,6 @@ void GameObject::Destroy()
 void GameObject::SetSprite()
 { 	
 	sprite.setTexture(texture);
-	//sprite.setOrigin(sf::Vector2f(texture.getSize().x / 2, texture.getSize().y / 2));
 }
 
 void GameObject::givePhysicsBody(b2World *World, b2BodyType physType)

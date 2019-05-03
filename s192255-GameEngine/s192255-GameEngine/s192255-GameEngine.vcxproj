@@ -156,7 +156,6 @@
     <ClInclude Include="Source\EngineApp\Rendering\Window.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Graphics\dialog_box.png" />
     <Image Include="Source\Assets\ball.png" />
     <Image Include="Source\Assets\floor.png" />
     <Image Include="Source\Assets\pirateMan.png" />

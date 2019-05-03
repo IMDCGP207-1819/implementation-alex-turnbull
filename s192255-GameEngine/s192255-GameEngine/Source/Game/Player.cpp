@@ -34,16 +34,12 @@ void Player::move(movementDirections moveType)
 
 void Player::Load(b2World *World)
 {
-	//initalPos = b2Vec2(200, 200);
 	givePhysicsBody(World, b2BodyType::b2_dynamicBody);
-	//body->SetTransform(initalPos, body->GetAngle());
-	//m_resMan->instance()->LoadTexture("Source\\Assets\\pirateMan.png", "pirateTex");
 }
 
 void Player::Update()
 {
 	inputComponent->Listen();
-	//sprite.setTexture(m_resMan->instance()->GetTextureFromMap("pirateTex"));
 
 	if (inputComponent->currentAction != inputComponent->no)
 	{

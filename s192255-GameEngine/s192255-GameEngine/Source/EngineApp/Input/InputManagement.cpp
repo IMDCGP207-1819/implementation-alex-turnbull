@@ -5,7 +5,6 @@
 
 InputManagement::InputManagement()
 {
-	//eventHandler = new EventManager
 }
 
 InputManagement::~InputManagement()
