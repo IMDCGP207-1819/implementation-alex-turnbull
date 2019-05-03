@@ -1,5 +1,6 @@
 #include "App.h"
 
+///Construct an App to Contain all the stuff
 App::App(std::string winName)
 {
 	m_windowName = winName;
@@ -13,7 +14,7 @@ App::App(std::string winName)
 	m_gamePtr = new Game(m_windowPtr->GameWindow, m_timeHandlerPtr);
 }
 
-
+///Delete the pointer stored in order to clean up memory
 App::~App()
 {
 	delete m_windowPtr;
@@ -24,6 +25,7 @@ App::~App()
 
 void App::Update()
 {
+	//Run the different components of the app
 	m_timeHandlerPtr->Update();
 	m_eventMangerPtr->pollEvents();
 	m_gamePtr->update();

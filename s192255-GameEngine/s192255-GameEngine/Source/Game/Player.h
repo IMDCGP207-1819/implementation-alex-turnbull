@@ -6,6 +6,7 @@
 #include "../EngineApp/Core/ResourceManager.h"
 
 class GameObject;
+///Controllable playable entity GameObject
 class Player :
 	public GameObject
 {

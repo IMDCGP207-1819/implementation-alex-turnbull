@@ -3,20 +3,21 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
+///Window class defines and handles the drawing and processing of sprites and the game world
 class Window
 {
 public:
 	Window(std::string name);
 	~Window();
 
-	void CreateWindow();
+	void CreateWindow(); //!< Create a new Render Window given the parameters
 
-	sf::RenderWindow* GameWindow;
+	sf::RenderWindow* GameWindow; //!< Store a reference to the SFML Render Window
 
-	int getWidth() { return m_width; }
-	int getHeight() { return m_height; }
+	int getWidth() { return m_width; } //!< return the width of the window
+	int getHeight() { return m_height; } //!< return the height of the window
 
-	Window* instance(){ return m_instance; }
+	Window* instance(){ return m_instance; } //!< return the instance of the window
 
 private:
 	int m_width;
