@@ -2,16 +2,17 @@
 #include <Box2D/Box2D.h>
 #include <iostream>
 
-#include "Window.h"
-#include "ResourceManager.h"
-#include "TimeHandler.h"
-#include "App.h"
-#include "InputManagement.h"
-#include "SceneManager.h"
 
-#include "../Game/GameObject.h"
-#include "../Game/Game.h"
-#include "../Game/Player.h"
+//#include "Core/SceneManager.h"
+//#include "Core/ResourceManager.h"
+//#include "Core/TimeHandler.h"
+#include "Core/App.h"
+//#include "Input/InputManagement.h"
+//#include "Rendering/Window.h"
+//
+//#include "../Game/GameObject.h"
+//#include "../Game/Game.h"
+//#include "../Game/Player.h"
 
 int main()
 {

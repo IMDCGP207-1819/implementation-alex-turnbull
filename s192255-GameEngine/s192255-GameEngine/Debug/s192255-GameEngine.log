@@ -1,5 +1,14 @@
-﻿  ContactListener.cpp
-  App.cpp
+﻿  App.cpp
+  SceneManager.cpp
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\engineapp\core\scenemanager.cpp(54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\engineapp\core\scenemanager.cpp(58): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  EventManager.cpp
+  InputManagement.cpp
+  main.cpp
   Game.cpp
 c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\game.cpp(73): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
           with
@@ -11,6 +20,20 @@ c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\
           [
               T=float
           ]
-  main.cpp
+  GameObject.cpp
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\gameobject.cpp(20): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\gameobject.cpp(55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Platform.cpp
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\platform.cpp(7): warning C4244: 'argument': conversion from 'int' to 'float32', possible loss of data
+  Player.cpp
+c:\users\alext\documents\github\implementation-alex-turnbull\s192255-gameengine\s192255-gameengine\source\game\player.cpp(7): warning C4244: 'argument': conversion from 'int' to 'float32', possible loss of data
   Generating Code...
   s192255-GameEngine.vcxproj -> C:\Users\alext\Documents\GitHub\implementation-alex-turnbull\s192255-GameEngine\Debug\s192255-GameEngine.exe

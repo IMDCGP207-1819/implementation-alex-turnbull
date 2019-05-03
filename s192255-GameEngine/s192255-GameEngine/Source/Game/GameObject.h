@@ -2,8 +2,8 @@
 
 #include <SFML/Graphics.hpp>
 #include <Box2D/Box2D.h>
-#include "../EngineApp/InputManagement.h"
-#include "../EngineApp/EventManager.h"
+#include "../EngineApp/Input/InputManagement.h"
+#include "../EngineApp/Input/EventManager.h"
 
 class GameObject: public sf::Transformable
 {

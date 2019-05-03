@@ -2,8 +2,8 @@
 #include <iostream>
 
 #include "GameObject.h"
-#include "../EngineApp/InputManagement.h"
-#include "../EngineApp/ResourceManager.h"
+#include "../EngineApp/Input/InputManagement.h"
+#include "../EngineApp/Core/ResourceManager.h"
 
 class GameObject;
 class Player :

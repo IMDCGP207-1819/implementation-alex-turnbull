@@ -1,12 +1,12 @@
 #pragma once
-#include "../EngineApp/ResourceManager.h"
 #include "GameObject.h"
 #include "Player.h"
 #include "Platform.h"
-#include "../EngineApp/SceneManager.h"
-#include "../EngineApp/EventManager.h"
-#include "../EngineApp/TimeHandler.h"
-#include "../EngineApp/ContactListener.h"
+#include "../EngineApp/Core/ResourceManager.h"
+#include "../EngineApp/Core/SceneManager.h"
+#include "../EngineApp/Core/TimeHandler.h"
+#include "../EngineApp/Input/EventManager.h"
+#include "../EngineApp/Physics/ContactListener.h"
 
 #include "Box2D/Collision/b2Collision.h"
 

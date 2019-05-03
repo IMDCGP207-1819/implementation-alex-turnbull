@@ -125,33 +125,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source\EngineApp\ContactListener.cpp" />
+    <ClCompile Include="Source\EngineApp\Physics\ContactListener.cpp" />
     <ClCompile Include="Source\Game\Platform.cpp" />
-    <ClCompile Include="Source\EngineApp\InputManagement.cpp" />
-    <ClCompile Include="Source\EngineApp\ResourceManager.cpp" />
-    <ClCompile Include="Source\EngineApp\SceneManager.cpp" />
+    <ClCompile Include="Source\EngineApp\Input\InputManagement.cpp" />
+    <ClCompile Include="Source\EngineApp\Core\ResourceManager.cpp" />
+    <ClCompile Include="Source\EngineApp\Core\SceneManager.cpp" />
     <ClCompile Include="Source\Game\Player.cpp" />
-    <ClCompile Include="Source\EngineApp\App.cpp" />
-    <ClCompile Include="Source\EngineApp\EventManager.cpp" />
+    <ClCompile Include="Source\EngineApp\Core\App.cpp" />
+    <ClCompile Include="Source\EngineApp\Input\EventManager.cpp" />
     <ClCompile Include="Source\Game\Game.cpp" />
     <ClCompile Include="Source\Game\GameObject.cpp" />
     <ClCompile Include="Source\EngineApp\main.cpp" />
-    <ClCompile Include="Source\EngineApp\TimeHandler.cpp" />
-    <ClCompile Include="Source\EngineApp\Window.cpp" />
+    <ClCompile Include="Source\EngineApp\Core\TimeHandler.cpp" />
+    <ClCompile Include="Source\EngineApp\Rendering\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\EngineApp\ContactListener.h" />
+    <ClInclude Include="Source\EngineApp\Physics\ContactListener.h" />
     <ClInclude Include="Source\Game\Platform.h" />
-    <ClInclude Include="Source\EngineApp\InputManagement.h" />
-    <ClInclude Include="Source\EngineApp\ResourceManager.h" />
-    <ClInclude Include="Source\EngineApp\SceneManager.h" />
+    <ClInclude Include="Source\EngineApp\Input\InputManagement.h" />
+    <ClInclude Include="Source\EngineApp\Core\ResourceManager.h" />
+    <ClInclude Include="Source\EngineApp\Core\SceneManager.h" />
     <ClInclude Include="Source\Game\Player.h" />
-    <ClInclude Include="Source\EngineApp\App.h" />
-    <ClInclude Include="Source\EngineApp\EventManager.h" />
+    <ClInclude Include="Source\EngineApp\Core\App.h" />
+    <ClInclude Include="Source\EngineApp\Input\EventManager.h" />
     <ClInclude Include="Source\Game\Game.h" />
     <ClInclude Include="Source\Game\GameObject.h" />
-    <ClInclude Include="Source\EngineApp\TimeHandler.h" />
-    <ClInclude Include="Source\EngineApp\Window.h" />
+    <ClInclude Include="Source\EngineApp\Core\TimeHandler.h" />
+    <ClInclude Include="Source\EngineApp\Rendering\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Graphics\dialog_box.png" />
